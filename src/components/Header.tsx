@@ -8,7 +8,7 @@ const navigation = [
 
 export function Header (props: IAppProps) {
   return (
-    <div className="grid grid-rows-2 place-items-center">
+    <div className="grid place-items-center p-5">
           <h1 className="font-sans text-3xl antialiased font-bold">
             Bruno G. Dias
           </h1>
@@ -17,7 +17,7 @@ export function Header (props: IAppProps) {
                 <a 
                   key={item.name} 
                   href={item.href} 
-                  className="font-semibold text-gray-900 hover:text-gray-900">
+                  className="font-semibold antialiased">
                   {item.name}
                 </a>
               ))}

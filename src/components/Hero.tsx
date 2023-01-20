@@ -1,17 +1,19 @@
-import heroImg from "../../public/images/hero.jpg"
 export interface IAppProps {
 }
 
 export function Hero (props: IAppProps) {
-  return (<>
+  return (
+  <div className="grid place-items-center gap-4">
     <img
-      src={heroImg}
+      src={"/images/hero.jpg"}
       width="300px"
     >
     </img>
-    <h2>Software reader and writer</h2>
-    <p>Always learning about Software development and Machine Learning</p>
-    <button>Go to Blog</button>
-  </>
+    <div className="grid place-items-center grid-flow-row gap-4">
+    <h2 className="font-sans text-2xl antialiased font-semibold">Software reader and writer</h2>
+    <p className="font-sans text-l antialiased">Always learning about Software development and Machine Learning</p>
+    <hr  className="border-transparent bg-white border-8 my-10" ></hr>
+    </div>
+  </div>
   );
 }

@@ -5,6 +5,10 @@ export interface IAppProps {
 
 export function Footer (props: IAppProps) {
   return (
-    <>{format(new Date(), "MMMM, yyyy")}</>
+    <div className='object-bottom flex items-center justify-center'>
+      <p  className='font-extralight italic antialiased'>
+      {format(new Date(), "MMMM, yyyy")}
+      </p>
+    </div>
   );
 }
