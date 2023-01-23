@@ -1,12 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Example from '../components/Test';
-
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { BlogPost } from '../components/BlogPost';
 ---
 
-<Layout title="Bruno G. Dias">
-	<main>
-		<Example></Example>
+<Layout title="Blog">
+	<main  class="grid place-items-center gap-4">
+		<Header />
+		<div class="grid gap-4">
+			<h2 class="font-sans text-2xl antialiased font-bold">Blog</h2>
+			<BlogPost />
+			<BlogPost />
+		</div>
+		<Footer />
 	</main>
 </Layout>
 
