@@ -1,0 +1,49 @@
+---
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		updatedDate?: string;
+		heroImage?: string;
+	};
+}
+
+const {
+	content: { title, description, pubDate, updatedDate, heroImage },
+} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				<h1 class="title">{title}</h1>
+				{pubDate && <time>{pubDate}</time>}
+				{
+					updatedDate && (
+						<div>
+							Last updated on <time>{updatedDate}</time>
+						</div>
+					)
+				}
+				<hr />
+				<slot />
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

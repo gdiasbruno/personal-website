@@ -2,8 +2,8 @@ export interface IAppProps {
 }
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Blog', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 export function Header (props: IAppProps) {
