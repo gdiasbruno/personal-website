@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { BlogPost } from '../components/BlogPost';
+
+const allPosts = await Astro.glob("./posts/*.md");
+
 ---
 
 <Layout title="Blog">
@@ -10,8 +13,16 @@ import { BlogPost } from '../components/BlogPost';
 		<Header />
 		<div class="grid gap-4">
 			<h2 class="font-sans text-2xl antialiased font-bold">Blog</h2>
-			<BlogPost />
-			<BlogPost />
+			{
+				allPosts.map((post) => 
+					 <BlogPost 
+						title={post.frontmatter.title}
+						pubDate={post.frontmatter.pubDate}
+						description={post.frontmatter.description}
+						link={post.url}
+					/>
+				)
+			}
 		</div>
 		<Footer />
 	</main>

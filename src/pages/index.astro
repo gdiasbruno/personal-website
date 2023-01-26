@@ -5,13 +5,19 @@ import { Hero } from '../components/Hero';
 import { Footer } from '../components/Footer';
 import { BlogSection } from '../components/BlogSection';
 
----
+const allPosts = await Astro.glob("./posts/*.md");
 
+const latestPosts = allPosts.map((post) => {
+	return { ...post };
+}).slice(allPosts.length -2, );
+---
 <Layout title="Bruno G. Dias">
 	<main>
 		<Header></Header>
 		<Hero></Hero>
-		<BlogSection></BlogSection>
+		<BlogSection
+			posts={latestPosts}
+		/>
 		<Footer></Footer>
 	</main>
 </Layout>

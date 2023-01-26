@@ -7,7 +7,7 @@ export function Footer (props: IAppProps) {
   return (
     <div className='object-bottom flex items-center justify-center'>
       <p  className='font-extralight italic antialiased'>
-      {format(new Date(), "MMMM, yyyy")}
+      Bruno Dias |  {format(new Date(), "MMMM, yyyy")}
       </p>
     </div>
   );
