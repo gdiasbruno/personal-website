@@ -14,6 +14,7 @@ export function BlogSection (props: IAppProps) {
       posts.map((post) => {
         return (
           <BlogPost
+            key={post.frontmatter.title}
             title={post.frontmatter.title}
             pubDate={post.frontmatter.pubDate}
             description={post.frontmatter.description}

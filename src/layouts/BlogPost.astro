@@ -14,7 +14,7 @@ export interface Props {
 }
 
 const {
-	content: { title, pubDate, updatedDate, heroImage, imageSource  },
+	content: { title, pubDate, updatedDate, heroImage, imageSource },
 } = Astro.props;
 ---
 
@@ -26,14 +26,13 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-
-	<body>
+	<body class="grid justify-center gap-4">
 		<Header />
-		<main class="grid justify-center ">
+		<main>
 			<article class="grid grid-cols-flow gap-4 max-w-lg">
 				<div>
 					{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-					{imageSource && <p class="text-xs italic">Image source</p>}
+					{imageSource && <p class="text-xs italic">{imageSource}</p>}
 				</div>
 				<h1 class="text-3xl font-semibold antialiased">{title}</h1>
 				{pubDate && <time>{pubDate}</time>}
@@ -44,29 +43,21 @@ const {
 						</div>
 					)
 				}
-				<hr />
+				<div class="grid place-items-center">
+					<hr  class="border-transparent bg-white border-8" />
+				</div>
 				<slot />
 			</article>
 		</main>
 		<Footer />
 	</body>
 </html>
-<style is:global>
+<style>
 	@tailwind base;
-	@layer base { 
-		html {
-			font-family: system-ui, sans-serif;
-			background-color: #1F2028;
-			color: #FFFFFF;
+	@layer base  {
+		a {
+			color: #5B8FB9 !important;
+			text-decoration: underline !important;
 		}
-		code {
-			font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-				Bitstream Vera Sans Mono, Courier New, monospace;
 		}
-
-		body {
-			margin: 0;
-			padding: 20px;
-		}
-	}
 </style>

@@ -12,10 +12,11 @@ const allPosts = await Astro.glob("./posts/*.md");
 	<main  class="grid place-items-center gap-4">
 		<Header />
 		<div class="grid gap-4">
-			<h2 class="font-sans text-2xl antialiased font-bold">Blog</h2>
+			<h2 class="font-sans text-2xl antialiased font-bold">Posts</h2>
 			{
 				allPosts.map((post) => 
-					 <BlogPost 
+					 <BlogPost
+					 	key={post.url!}
 						title={post.frontmatter.title}
 						pubDate={post.frontmatter.pubDate}
 						description={post.frontmatter.description}

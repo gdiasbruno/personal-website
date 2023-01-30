@@ -1,4 +1,5 @@
 export interface IAppProps {
+  key: string;
   title: string;
   pubDate: string;
   description: string;
@@ -12,7 +13,7 @@ export function BlogPost (props: IAppProps) {
       <h3 className="text-xl font-semibold antialiased">{title}</h3>
       <p className="italic antialiased">{pubDate}</p>
       <p className="text-base font-light antialiased">{description}</p>
-      <a className="justify-self-end" href={link}>Go to post</a>
+      <a className="justify-self-end underline" href={link}>Go to post</a>
     </div>
   );
 }
