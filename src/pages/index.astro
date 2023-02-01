@@ -9,7 +9,7 @@ const allPosts = await Astro.glob("./posts/*.md");
 
 const latestPosts = allPosts.map((post) => {
 	return { ...post };
-}).slice(allPosts.length -2, );
+}).reverse().slice(0, 2);
 ---
 <Layout title="Bruno G. Dias">
 	<main>
