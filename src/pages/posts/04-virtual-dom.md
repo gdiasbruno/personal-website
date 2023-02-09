@@ -4,7 +4,7 @@ title: "Virtual DOM: The React way"
 description: "React is one of the most popular frameworks to build UI interfaces. One of the core concepts of React is Virtual DOM (VDOM). The VDOM is the gatekeeper between your React code and the UI rendered by the browser."
 pubDate: "August 18, 2022"
 heroImage: "/images/04-virtual-dom/react-icon.png"
-imageSource: "React logo."
+imageSource: "Photo by David Pisnoy on Unsplash"
 ---
 
 React is one of the most popular frameworks to build UI interfaces. One of the core concepts of React is Virtual DOM (VDOM). The VDOM is the gatekeeper between your React code and the UI rendered by the browser. This article aims to explain what problem it solves and how it works.
@@ -12,7 +12,7 @@ React is one of the most popular frameworks to build UI interfaces. One of the c
 ## **What problem does it solve?**
 The problem VDOM is trying to solve is DOM manipulation. To be more specific: how to make DOM manipulation in an efficient and reliable way. Efficient means diminishing the cost of DOM manipulation to a minimum. Reliable means performing the DOM manipulations in a way that avoids bugs. And when a bug happens, allow a good debugging experience. Let’s go deep into these two aspects.
 
-DOM manipulation is computationally expensive. We can grasp this by taking a look at this example in the GeeksForGeeks article:
+DOM manipulation is computationally expensive. We can grasp this by taking a look at this example in the <a target="_blank" href="https://www.geeksforgeeks.org/reactjs-virtual-dom" class="underline">GeeksForGeeks article</a>.
 
 The article proposes taking a step-by-step look at how this Javascript code ends up being rendered by the browser. The code:
 
@@ -48,7 +48,7 @@ The VDOM is a small part of a bigger process called Reconciliation. Reconciliati
 
 React always hold a copy of the current real DOM in memory as a Javascript object - this is what we call VDOM. When an update is triggered in React - for example, setting a change to a particular part of the state - the Reconciliation starts.
 
-The first thing is to calculate a new VDOM based on this new state. This passes by resolving React Components into React Elements. Once a new VDOM tree is done, React will compare the old VDOM tree with the new one. By the difference between the two, React will calculate what operations take to bring the old VDOM to look like the new one. Then it will send it to the render process. And the render process takes care of bringing this new VDOM to the real DOM.
+The first thing is to calculate a new VDOM based on this new state. This passes by resolving <a class="underline" href="https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html" target="_blank">React Components into React Elements</a>. Once a new VDOM tree is done, React will compare the old VDOM tree with the new one. By the difference between the two, React will calculate what operations take to bring the old VDOM to look like the new one. Then it will send it to the render process. And the render process takes care of bringing this new VDOM to the real DOM.
 
 One interesting side effect of React separating the Reconciliation process and the render process itself is that React can not only render in the browser - it can virtually render anywhere. And that is how React Native project is powered - rendering the VDOM (which is not the best name in this context) in the mobile environments
 
@@ -56,7 +56,7 @@ Of the four most popular Javascript frameworks, React and Vue.js uses a VDOM. Wh
 
 ## **Critics of VDOM and other paths**
 
-In the article “Virtual DOM is pure overhead”, Rich Harris develops his critics of VDOM. He argues that the diffing process is unnecessary - the comparison between the old and new VDOM trees - to achieve an efficient and reliable way to build UIs. He also says that React compromises for a lot of re-work in order to maintain predictability. His critique is relevant because he proposes a whole new framework that aims to overcome these problems and claims to deliver the same efficiency and reliability that React offers.
+In the article <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead" class="underline" target="_blank">“Virtual DOM is pure overhead”</a>, Rich Harris develops his critics of VDOM. He argues that the diffing process is unnecessary - the comparison between the old and new VDOM trees - to achieve an efficient and reliable way to build UIs. He also says that React compromises for a lot of re-work in order to maintain predictability. His critique is relevant because he proposes a whole new framework that aims to overcome these problems and claims to deliver the same efficiency and reliability that React offers.
 
 Also Angular has the concept of “Incremental DOM” that approaches DOM manipulation in a whole other way. 
 
@@ -67,24 +67,24 @@ So, The VDOM is a popular approach to DOM manipulation problems, but it is not u
 <ul class="list-disc">
 
 <li>
-<a href="https://podcasts.apple.com/uy/podcast/virtual-dom-and-the-react-way-part-1-jsj-512/id496893300?i=1000544438065" class="underline">Virtual DOM and the React Way, Part 1 - JSJ 512
+<a href="https://podcasts.apple.com/uy/podcast/virtual-dom-and-the-react-way-part-1-jsj-512/id496893300?i=1000544438065" class="underline" target="_blank">Virtual DOM and the React Way, Part 1 - JSJ 512
 </a>
 </li>
 
 <li>
-<a href="https://www.codecademy.com/article/react-virtual-dom" class="underline">React: The Virtual DOM</a>
+<a href="https://www.codecademy.com/article/react-virtual-dom" class="underline" target="_blank">React: The Virtual DOM</a>
 </li>
 
 <li>
-<a href="https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/" class="underline">The difference between Virtual DOM and DOM</a>
+<a href="https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/" class="underline" target="_blank">The difference between Virtual DOM and DOM</a>
 </li>
 
 <li>
-<a href="https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react" class="underline">Exploring how virtual DOM is implemented in React</a>
+<a href="https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react" class="underline" target="_blank">Exploring how virtual DOM is implemented in React</a>
 </li>
 
 <li>
-<a href="https://github.com/acdlite/react-fiber-architecture" class="underline">React Fiber Architecture</a>
+<a href="https://github.com/acdlite/react-fiber-architecture" class="underline" target="_blank">React Fiber Architecture</a>
 </li>
 
 </ul>
