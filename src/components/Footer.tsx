@@ -1,5 +1,5 @@
-import format from 'date-fns/format'
-import { FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import format from 'date-fns/format/index.js'
+import { FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa/index";
 export interface IAppProps {
 }
 
