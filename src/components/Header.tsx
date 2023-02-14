@@ -3,12 +3,12 @@ export interface IAppProps {
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Posts', href: '/blog' },
+  { name: 'Posts', href: '/posts' },
 ]
 
 export function Header (props: IAppProps) {
   return (
-    <div className="grid place-items-center p-5">
+    <div className="grid place-items-center p-3">
           <h1 className="font-sans text-3xl antialiased font-bold">
             Bruno G. Dias
           </h1>

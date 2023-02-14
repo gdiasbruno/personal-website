@@ -1,11 +1,11 @@
 import type { MarkdownInstance } from "astro";
-import { BlogPost } from "./BlogPost";
+import { PostPreview } from "./PostPreview";
 
 export interface IAppProps {
   posts: MarkdownInstance<Record<string, any>>[];
 }
 
-export function BlogSection (props: IAppProps) {
+export function PostsSectionHome (props: IAppProps) {
   const { posts } = props;
   return (
     <div className='grid place-items-center gap-4'>
@@ -13,7 +13,7 @@ export function BlogSection (props: IAppProps) {
     {
       posts.map((post) => {
         return (
-          <BlogPost
+          <PostPreview
             key={post.frontmatter.title}
             title={post.frontmatter.title}
             pubDate={post.frontmatter.pubDate}
@@ -23,10 +23,6 @@ export function BlogSection (props: IAppProps) {
         )
       })
     }
-    
-    
-
-    <hr  className="border-transparent bg-white border-8 my-10" ></hr>
     </div>
   );
 }

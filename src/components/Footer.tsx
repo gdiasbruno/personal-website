@@ -5,7 +5,7 @@ export interface IAppProps {
 
 export function Footer (props: IAppProps) {
   return (
-    <div className='grid grid-flow-row gap-4'>
+    <div className='grid grid-flow-row gap-4 mt-4'>
       <div className='object-bottom flex items-center justify-center'>
         <p  className='font-light italic antialiased'>
         Bruno Dias © { format(new Date(), "MMMM, yyyy")}

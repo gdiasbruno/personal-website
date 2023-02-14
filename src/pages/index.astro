@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { Footer } from '../components/Footer';
-import { BlogSection } from '../components/BlogSection';
+import { PostsSectionHome } from '../components/PostsSectionHome';
 
 const allPosts = await Astro.glob("./posts/*.md");
 
@@ -12,12 +12,14 @@ const latestPosts = allPosts.map((post) => {
 }).reverse().slice(0, 2);
 ---
 <Layout title="Bruno G. Dias">
-	<main>
+	<main class="grid justify-center">
 		<Header></Header>
 		<Hero></Hero>
-		<BlogSection
+		<hr class="border-transparent bg-white border-1 my-10" />
+		<PostsSectionHome
 			posts={latestPosts}
 		/>
+		<!-- <hr class="border-transparent bg-white border-1 mt-10" /> -->
 		<Footer></Footer>
 	</main>
 </Layout>

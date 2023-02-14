@@ -6,7 +6,7 @@ export interface IAppProps {
   link?: string;
 }
 
-export function BlogPost (props: IAppProps) {
+export function PostPreview (props: IAppProps) {
   const { title, pubDate, description, link } = props;
   return (
     <div className="grid grid-flow-row gap-4 border-2 p-5 max-w-md">
