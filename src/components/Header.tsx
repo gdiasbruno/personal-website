@@ -21,7 +21,7 @@ export function Header (props: IAppProps) {
       </div>
       <div className="sm:grid sm:justify-end sm:w-full hidden" >
     <img
-      src={"/images/hero.jpg"}
+      src={"/images/hero_2.jpg"}
       width="175px"
       className="rounded-full"
     />
