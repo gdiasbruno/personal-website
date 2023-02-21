@@ -9,11 +9,10 @@ export interface IAppProps {
 export function PostPreview (props: IAppProps) {
   const { title, pubDate, description, link } = props;
   return (
-    <div className="grid grid-flow-row gap-4 border-2 p-5 max-w-md">
-      <h3 className="text-xl font-semibold antialiased">{title}</h3>
-      <p className="italic antialiased">{pubDate}</p>
-      <p className="text-base font-light antialiased">{description}</p>
-      <a className="justify-self-end underline" href={link}>Go to post</a>
-    </div>
+    <a href={link}><div className="grid grid-flow-row gap-4 border-2 p-5 w-full">
+      <h3 className="text-2xl font-semibold antialiased">{title}</h3>
+      <p className="italic text-gray-400 antialiased">{pubDate}</p>
+      <p className="text-base antialiased">{description}</p>
+    </div></a>
   );
 }

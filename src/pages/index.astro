@@ -12,14 +12,10 @@ const latestPosts = allPosts.map((post) => {
 }).reverse().slice(0, 2);
 ---
 <Layout title="Bruno G. Dias">
-	<main>
+	<main class="max-w-3xl mx-auto my-16 px-10">
 		<Header></Header>
-		<Hero></Hero>
-		<hr class="border-transparent bg-white border-1 my-10" />
 		<PostsSectionHome
-			posts={latestPosts}
+			posts={allPosts.reverse()}
 		/>
-		<!-- <hr class="border-transparent bg-white border-1 mt-10" /> -->
-		<Footer></Footer>
 	</main>
 </Layout>

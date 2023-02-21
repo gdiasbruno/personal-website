@@ -8,8 +8,8 @@ export interface IAppProps {
 export function PostsSectionHome (props: IAppProps) {
   const { posts } = props;
   return (
-    <div className='grid place-items-center gap-4'>
-    <h2 className="font-sans text-2xl font-semibold antialiased">Latest Posts</h2>
+    <div className='grid gap-4'>
+    <h2 className="font-sans text-3xl font-semibold antialiased">Latest Posts</h2>
     {
       posts.map((post) => {
         return (
