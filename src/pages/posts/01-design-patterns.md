@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "What are Design Patterns?"
 description: "This short text aims to give a brief overview of Design Patterns. The theme is a common topic in Software Development discussions and is a part of the everyday life of any developer trying to build well-designed software. But what are Design Patterns?"
 pubDate: "February 15, 2022"
-heroImage: "/images/01-design-patterns/patterns.jpg"
+heroImage: "/images/01-design-patterns/patterns_resize.jpg"
 imageSource: "Photo by MagicPattern on Unsplash"
 ---
 

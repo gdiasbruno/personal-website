@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "What is Atomic Design for and why does it matter?"
 description: "The 2013 blog post from Brad Frost is a great introduction to Atomic Design. There he provides the raw definition: Atomic Design is a methodology to build design systems. The text misses addressing the big picture. And you may end up with more questions than answers after the reading."
 pubDate: "July 8, 2022"
-heroImage: "/images/02-atomic-design/atomic.jpg"
+heroImage: "/images/02-atomic-design/atomic_resize.jpg"
 imageSource: "Photo by Norbert Kowalczyk on Unsplash"
 ---
 
@@ -15,7 +15,7 @@ Still, I would think there is still a big question hanging above us: why does it
 
 ## **The core abstractions**
 
-<img width="720" src="/images/02-atomic-design/atomic-core.png" alt="core abstractions">
+<img width="720" src="/images/02-atomic-design/atomic-core_resize.png" alt="core abstractions">
 <p class="italic text-xs">Atomic design main concepts (<a href="https://bradfrost.com/blog/post/atomic-web-design/" class="underline text-xs">Source</a>)<p>
 
 The Atomic Design provides a way to organize your UI library around five different abstractions that escalate in levels. They are (1) the atoms, (2) the molecules, (3) the organisms, (4) the templates, and (5) the pages. 

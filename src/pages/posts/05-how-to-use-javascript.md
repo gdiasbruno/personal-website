@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "How to use JavaScript?"
 description: "“Use only the good parts” is Douglas Crockford's answer to this question. Douglas Crockford is a Javascript reference: a software architect who worked many years at Yahoo and Paypal. He wrote two books about the language: “Javascript: The good parts” and “How Javascript works”. He is most known for defining JSON data format - arguably the most popular data format on the Web. "
 pubDate: "October 13, 2022"
-heroImage: "/images/05-how-to-use-javascript/brick-wall.avif"
+heroImage: "/images/05-how-to-use-javascript/brick-wall_resize.jpg"
 imageSource: "Photo by David Pisnoy on Unsplash"
 ---
 
