@@ -30,12 +30,8 @@ const {
 		<main>
 			<a href="/"><nav class="my-5 text-lg italic text-gray-400">← Home</nav></a>
 			<article class="grid grid-cols-flow gap-4 max-w-lg">
-				<div>
-					{heroImage && <img width={720} height={360} src={heroImage} alt="hero image" />}
-					{imageSource && <p class="text-xs text-gray-400 italic">{imageSource}</p>}
-				</div>
 				<h1 class="text-3xl font-semibold antialiased">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
+				{pubDate && <time class="italic text-gray-400">{pubDate}</time>}
 				{
 					updatedDate && (
 						<div>
@@ -43,9 +39,6 @@ const {
 						</div>
 					)
 				}
-				<div class="grid place-items-center">
-					<hr  class="border-transparent bg-gray-400 border-8" />
-				</div>
 				<slot />
 			</article>
 		</main>
