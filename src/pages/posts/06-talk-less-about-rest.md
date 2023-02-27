@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Should we talk less about REST?"
-description: "“In the book “Release It!”, Michael T. Nygard says “REST with JSON over HTTP is the lingua franca for services today”. HTTP and JSON are very popular indeed. But is REST that popular? For sure, REST & RESTful APIs are widely mentioned concepts. Big players have this concept on their product docs somewhere,1 and the most used programming languages have plenty of tutorials teaching about RESTful APIs. "
+description: "“In the book “Release It!”, Michael T. Nygard says “REST with JSON over HTTP is the lingua franca for services today”. HTTP and JSON are very popular indeed. But is REST that popular? For sure, REST & RESTful APIs are widely mentioned concepts. Big players have this concept on their product docs somewhere, and the most used programming languages have plenty of tutorials teaching about RESTful APIs. "
 pubDate: "December 14, 2022"
 heroImage: "/images/06-talk-less-about-rest/phone_resize.jpg"
 imageSource: "Photo by Quino Al on Unsplash"
@@ -9,7 +9,7 @@ imageSource: "Photo by Quino Al on Unsplash"
 
 In the book “Release It!”, Michael T. Nygard says “REST with JSON over HTTP is the lingua franca for services today”. HTTP and JSON are very popular indeed. But is REST that popular?  
 
-For sure, REST & RESTful APIs are widely mentioned concepts. Big players have this concept on their product docs somewhere,1 and the most used programming languages have plenty of tutorials teaching about RESTful APIs. 
+For sure, REST & RESTful APIs are widely mentioned concepts. Big players have this concept on their product docs <a target="_blank" class="underline" href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">somewhere</a>, and the most used programming languages have plenty of tutorials teaching about RESTful APIs. 
 
 But when it comes down to implementation and problem-solving, REST has a more restricted use than the popularity of the term would make us believe. And it is arguable that most of the so-called RESTful APIs are actually something else. In this article, we will discuss REST architecture and why we should talk less about it. 
 
