@@ -1,21 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Header } from '../components/Header';
-import { Hero } from '../components/Hero';
-import { Footer } from '../components/Footer';
-import { PostsSectionHome } from '../components/PostsSectionHome';
+import Layout from "../layouts/Layout.astro";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { PostsSectionHome } from "../components/PostsSectionHome";
 
 const allPosts = await Astro.glob("./posts/*.md");
 
-const latestPosts = allPosts.map((post) => {
-	return { ...post };
-}).reverse().slice(0, 2);
+const latestPosts = allPosts
+  .map((post) => {
+    return { ...post };
+  })
+  .reverse()
+  .slice(0, 2);
 ---
+
 <Layout title="Bruno G. Dias">
-	<main class="max-w-3xl mx-auto my-16 px-10">
-		<Header></Header>
-		<PostsSectionHome
-			posts={allPosts.reverse()}
-		/>
-	</main>
+  <main class="mx-auto my-10 max-w-3xl px-5">
+    <Header />
+    <PostsSectionHome posts={allPosts.reverse()} />
+    <Footer />
+  </main>
 </Layout>

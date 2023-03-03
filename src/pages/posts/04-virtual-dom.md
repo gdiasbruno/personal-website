@@ -10,17 +10,18 @@ imageSource: "Photo by David Pisnoy on Unsplash"
 React is one of the most popular frameworks to build UI interfaces. One of the core concepts of React is Virtual DOM (VDOM). The VDOM is the gatekeeper between your React code and the UI rendered by the browser. This article aims to explain what problem it solves and how it works.
 
 ## **What problem does it solve?**
+
 The problem VDOM is trying to solve is DOM manipulation. To be more specific: how to make DOM manipulation in an efficient and reliable way. Efficient means diminishing the cost of DOM manipulation to a minimum. Reliable means performing the DOM manipulations in a way that avoids bugs. And when a bug happens, allow a good debugging experience. Let’s go deep into these two aspects.
 
 DOM manipulation is computationally expensive. We can grasp this by taking a look at this example in the <a target="_blank" href="https://www.geeksforgeeks.org/reactjs-virtual-dom" class="underline">GeeksForGeeks article</a>.
 
 The article proposes taking a step-by-step look at how this Javascript code ends up being rendered by the browser. The code:
 
-
 <img width="720" src="/images/04-virtual-dom/update-element.png" alt="code block">
 <p class="italic text-xs">Javascript code to update inner value in an element<p>
 
 The step-by-step process:
+
 <ol  class="list-decimal">  
 <li>The browser parses the HTML to find the node with this id.</li>
 
@@ -58,7 +59,7 @@ Of the four most popular Javascript frameworks, React and Vue.js uses a VDOM. Wh
 
 In the article <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead" class="underline" target="_blank">“Virtual DOM is pure overhead”</a>, Rich Harris develops his critics of VDOM. He argues that the diffing process is unnecessary - the comparison between the old and new VDOM trees - to achieve an efficient and reliable way to build UIs. He also says that React compromises for a lot of re-work in order to maintain predictability. His critique is relevant because he proposes a whole new framework that aims to overcome these problems and claims to deliver the same efficiency and reliability that React offers.
 
-Also Angular has the concept of “Incremental DOM” that approaches DOM manipulation in a whole other way. 
+Also Angular has the concept of “Incremental DOM” that approaches DOM manipulation in a whole other way.
 
 So, The VDOM is a popular approach to DOM manipulation problems, but it is not unanimity and share spaces with other solutions as well.
 

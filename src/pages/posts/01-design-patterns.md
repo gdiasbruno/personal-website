@@ -14,6 +14,7 @@ Inspired by <a href="https://twitter.com/jonathanfmills" class="underline">Johna
 Design Patterns are our current best guess for some common problems in software development. An example would be: the pedestrian traffic problem or “how can I manage pedestrian traffic in a city?”, urbanist-architects have a current best guess to solve it — the sidewalk. That’s what we could consider to be a Design Pattern.
 
 ## **What does it take to be a Design Pattern?**
+
 <ol class="list-decimal">
     <li>Needs to solve a problem</li>
     <li>Needs to be a proven solution (It has been used before in many contexts and worked)</li>

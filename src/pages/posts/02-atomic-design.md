@@ -7,18 +7,18 @@ heroImage: "/images/02-atomic-design/atomic_resize.jpg"
 imageSource: "Photo by Norbert Kowalczyk on Unsplash"
 ---
 
-<a href="https://bradfrost.com/blog/post/atomic-web-design" class="underline">The 2013 blog post from Brad Frost</a> is still a great introduction to Atomic Design. There he provides the main concepts behind it and the raw definition: Atomic Design is a methodology to build design systems. Although Brad is very clear and you can feel his enthusiasm in his writing - the text misses addressing the big picture (which Brad provides amazingly well in <a href="https://atomicdesign.bradfrost.com/table-of-contents/" class="underline">his book</a>). And you may end up with more questions than answers after reading it. 
+<a href="https://bradfrost.com/blog/post/atomic-web-design" class="underline">The 2013 blog post from Brad Frost</a> is still a great introduction to Atomic Design. There he provides the main concepts behind it and the raw definition: Atomic Design is a methodology to build design systems. Although Brad is very clear and you can feel his enthusiasm in his writing - the text misses addressing the big picture (which Brad provides amazingly well in <a href="https://atomicdesign.bradfrost.com/table-of-contents/" class="underline">his book</a>). And you may end up with more questions than answers after reading it.
 
-Looking at the raw definition, the first question mark popping up is: if  Atomic Design helps to create design systems. What are design systems? Design systems are guidelines for design decisions. And they can take multiple forms as style guides for Brand identity, Design language, Voice and tone, and many more (if you are curious you can check <a href="https://atomicdesign.bradfrost.com/chapter-1/#design-systems-save-the-day" class="underline">'Design systems save the day'</a>). 
+Looking at the raw definition, the first question mark popping up is: if Atomic Design helps to create design systems. What are design systems? Design systems are guidelines for design decisions. And they can take multiple forms as style guides for Brand identity, Design language, Voice and tone, and many more (if you are curious you can check <a href="https://atomicdesign.bradfrost.com/chapter-1/#design-systems-save-the-day" class="underline">'Design systems save the day'</a>).
 
-Still, I would think there is still a big question hanging above us: why does it all matter? Atomic Design and design systems are embedded in a much larger discussion about 'how to organize the cross-disciplinary field of web design & development in an efficient way'. Efficient here means to keep consistency across multiple platforms: consistent UI, consistent user experience, consistent brand identity, and maintaining all the characteristics of good software. Quite a  challenging task and one that design system and Atomic Design came as a model and a tool (respectively) to address. 
+Still, I would think there is still a big question hanging above us: why does it all matter? Atomic Design and design systems are embedded in a much larger discussion about 'how to organize the cross-disciplinary field of web design & development in an efficient way'. Efficient here means to keep consistency across multiple platforms: consistent UI, consistent user experience, consistent brand identity, and maintaining all the characteristics of good software. Quite a challenging task and one that design system and Atomic Design came as a model and a tool (respectively) to address.
 
 ## **The core abstractions**
 
 <img width="720" src="/images/02-atomic-design/atomic-core_resize.png" alt="core abstractions">
 <p class="italic text-xs">Atomic design main concepts (<a href="https://bradfrost.com/blog/post/atomic-web-design/" class="underline text-xs">Source</a>)<p>
 
-The Atomic Design provides a way to organize your UI library around five different abstractions that escalate in levels. They are (1) the atoms, (2) the molecules, (3) the organisms, (4) the templates, and (5) the pages. 
+The Atomic Design provides a way to organize your UI library around five different abstractions that escalate in levels. They are (1) the atoms, (2) the molecules, (3) the organisms, (4) the templates, and (5) the pages.
 
 Starting with the **atoms**, Brand set the **atoms** as the building blocks. Mostly that translates to the HTML tags like the periodic table shown below.
 
@@ -43,7 +43,7 @@ Brad makes a really good point about the names and metaphors: they do not really
 
 ## **Paradigm shift**
 
-Beyond these five levels, Atomic Design and design systems want to make a deep shift in how web design & development is organized. The goal is to stop thinking about developing pages and start to think about developing systems. So the workflow stops being focused on ad hoc changes in the UI that are really hard to document, maintain and keep consistent; and starts to be about more elaborated changes in the system that translates ultimately into the desired changes in the UI - but now in a much more consistent fashion. 
+Beyond these five levels, Atomic Design and design systems want to make a deep shift in how web design & development is organized. The goal is to stop thinking about developing pages and start to think about developing systems. So the workflow stops being focused on ad hoc changes in the UI that are really hard to document, maintain and keep consistent; and starts to be about more elaborated changes in the system that translates ultimately into the desired changes in the UI - but now in a much more consistent fashion.
 
 <img width="720" src="/images/02-atomic-design/atomic-paradigm.png" alt="core abstractions">
 <p class="italic text-xs">The desired new paradigm (<a href="https://atomicdesign.bradfrost.com/chapter-5" class="underline text-xs">Source</a>)<p>

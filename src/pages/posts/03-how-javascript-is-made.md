@@ -10,6 +10,7 @@ imageSource: "Unofficial JavaScript logo by Chris Williams."
 Javascript is the language that powers the web together with HTML and CSS. According to <a target="_blank" href="https://survey.stackoverflow.co/2022/#technology-most-popular-technologies" class="underline">Stack Overflow Survey 2022</a>, Javascript is the most commonly used programming language. And has been like that for ten years in a row. It is a solid reign. Who decides and writes the future of the most commonly used programming language? To understand that, we will deep into a brief story of Javascript.
 
 ## **The Origins of JavaScript**
+
 <a target="_blank" href="https://www.youtube.com/watch?v=qKJP93dWn40" class="underline">“Ten days of hard work and poor sleep” is how Brendan Eich defines the days he worked to create Mocha</a>. That was the first name of the project, then it was renamed “Livescript”. And finally, at the end of 1995, the language was renamed “Javascript”. The name would cause confusion between Javascript and a trendy language by the time: Java. A confusion that remains to these days.
 
 Javascript was created in the demand to make the browser more dynamic. In Brendan Eich owns words:
@@ -35,18 +36,23 @@ Any company can participate in the TC39, it has only to join Ecma and pay the an
 TC39 has a <a target="_blank" href="https://tc39.es/process-document/" class="underline">five-step process</a> that covers from the first proposition until inclusion in the ECMAScript standard. The five stages are:
 
 ### STAGE 0: STRAWPERSON
+
 Any discussion, idea, or proposal that has not been submitted formally is at that stage. Only TC39 delegates or registered members at Ecma can propose one of these.
 
 ### STAGE 1: FORMAL PROPOSAL
+
 The idea being discussed is finally formalized and enters stage 1. To be formalized it needs to have a description of the problem it is addressing and the general shape of the solution proposed. Also a high-level description of the API and the algorithms involved in the solution.
 
 ### STAGE 2: DRAFT
+
 In this stage, is expected that the proposition have a first version on the spec version. It is allowed to have holes as TODOs and placeholders, but all major components on the specifications must be addressed.
 
 ### STAGE 3: COMPLETE
+
 In this stage, the solution is fully described and nothing can be added anymore except for any fix that is found to be needed.
 
 ### STAGE 4: FINAL
+
 The proposition will be included in the next Ecma standard release.
 
 To see more details you can check the <a target="_blank" href="https://tc39.es/process-document/" class="underline">official doc</a> or this <a target="_blank" href="https://www.freecodecamp.org/news/tc39-and-its-contributions-to-ecmascript-c178b77f32e1/" class="underline">blog text</a>.
@@ -58,7 +64,7 @@ An example of a new proposition going through this process is “A Proposal For 
 <img width="720" src="/images/03-how-javascript-is-made/igalia.png" alt="igalia logo">
 <p class="italic text-xs">Igalia Logo (<a href="https://www.vectorlogo.zone/logos/igalia/index.html" class="underline text-xs">Source</a>)<p>
 
-So now we know how Javascript was created, why is it in the browser, and how it got into Ecma. We also know how Ecma defines new features to Javascript (or ECMAScript if you rather). But who writes these new features, and who makes the implementation so that works in the browsers? Or in the Node.js runtime? There are many companies responsible for that depending on the browser, but there is one company responsible for many implementations in the most used browser (Chrome, Firefox, and Safari) and the Node project: it is the open source consultancy, Igalia. 
+So now we know how Javascript was created, why is it in the browser, and how it got into Ecma. We also know how Ecma defines new features to Javascript (or ECMAScript if you rather). But who writes these new features, and who makes the implementation so that works in the browsers? Or in the Node.js runtime? There are many companies responsible for that depending on the browser, but there is one company responsible for many implementations in the most used browser (Chrome, Firefox, and Safari) and the Node project: it is the open source consultancy, Igalia.
 
 Igalia probably does not have the spotlight that Mozilla, Google, or Apple has, but if your website is running an edge Javascript feature - it is probably using an implementation done by Igalia. Igalia is a “free software consultancy” in their own words. They are involved in big open source projects like Chromium (created by Google), Webkit (created by Apple), Mozilla’s Servo, and V8 (Javascript engine used by Node and Google Chrome) naming a few.
 
@@ -67,7 +73,6 @@ You can check more on their <a target="_blank" href="https://www.igalia.com/tech
 ## **Back to our initial question: How Javascript is made?**
 
 As expected, the process of making the most commonly used programming language in the world is complex and involves many players. From the stage, 0 proposals to your favorite Javascript runtime is a long walk. But if we are looking for a company doing a great part of the dirty implementation job today, Igalia is definite a name to keep.
-
 
 <a target="_blank" href="https://www.youtube.com/watch?v=SUl36febsZg" class="underline italic">This text was highly inspired by Tejas Kumar's video</a>
 
