@@ -9,3 +9,9 @@ imageSource: "Photo by Quino Al on Unsplash"
 
 
 https://web.dev/howbrowserswork/
+
+HTML parsing
+
+error forgiveness
+
+head is expected
