@@ -15,3 +15,21 @@ HTML parsing
 error forgiveness
 
 head is expected
+
+Bowsers first paint
+
+Parsing HTML to construct the DOM tree
+
+https://dev.w3.org/html5/spec-LC/parsing.html
+
+https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path
+
+https://medium.com/jspoint/how-the-browser-renders-a-web-page-dom-cssom-and-rendering-df10531c9969#:~:text=When%20the%20browser%20request%20for,one%20node%20at%20a%20time.
+
+https://web.dev/critical-rendering-path/
+
+Render tree construction
+
+Layout of the render tree
+
+Painting the render tree
